@@ -38,7 +38,7 @@ const App = () => (
         <HashRouter>
           <Routes>
             <Route 
-              path="/dashboard" 
+              path="/AboOmar/dashboard" 
               element={
                 <PrivateRoute  allowedRoles={["admin"]}>
                   <Dashboard />
@@ -46,7 +46,7 @@ const App = () => (
               } 
             />
             <Route 
-              path="/balance" 
+              path="/AboOmar/balance" 
               element={
                 <PrivateRoute  allowedRoles={["admin"]}>
                   <Balance />
@@ -54,7 +54,7 @@ const App = () => (
               } 
             />
             <Route 
-              path="/users" 
+              path="/AboOmar/users" 
               element={
                 <PrivateRoute  allowedRoles={["admin"]}>
                   <Users />
@@ -62,7 +62,7 @@ const App = () => (
               } 
             />
             <Route 
-              path="/CustomerDetails/:id" 
+              path="/AboOmar/CustomerDetails/:id" 
               element={
                 <PrivateRoute  allowedRoles={["admin"]}>
                   <CustomerDetails />
@@ -70,11 +70,11 @@ const App = () => (
               } 
             />
 
-            <Route path="/unauthorized" element={<UnauthorizedPage/>}/>
-            <Route path="/login" element={<Login/>}/>
-            <Route path="/signUp" element={<SignUp/>}/>
+            <Route path="/AboOmar/unauthorized" element={<UnauthorizedPage/>}/>
+            <Route path="/AboOmar/login" element={<Login/>}/>
+            <Route path="/AboOmar/signUp" element={<SignUp/>}/>
             <Route
-              path="/settings"
+              path="/AboOmar/settings"
               element={
                 <div className="min-h-screen flex items-center justify-center">
                   <div className="text-center">

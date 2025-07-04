@@ -12,7 +12,7 @@ export default function SignUp() {
   const handleSignUp = async () => {
     // حفظ البيانات في قاعدة بيانات أو API
     alert("Account created!");
-    navigate("/login");
+    navigate("/AboOmar/login");
   };
 
   return (

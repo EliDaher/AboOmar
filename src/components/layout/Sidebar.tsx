@@ -12,9 +12,9 @@ import { Button } from "@/components/ui/button";
 import DaherLogo from "../ui/logo";
 
 const navigation = [
-  { name: "Dashboard", href: "/dashboard", icon: Home, allowed: ['admin'] },
-  { name: "Customers", href: "/users", icon: Users },
-  { name: "Balance", href: "/balance", icon: WalletIcon },
+  { name: "Dashboard", href: "/AboOmar/dashboard", icon: Home, allowed: ['admin'] },
+  { name: "Customers", href: "/AboOmar/users", icon: Users },
+  { name: "Balance", href: "/AboOmar/balance", icon: WalletIcon },
 ];
 
 interface SidebarProps {

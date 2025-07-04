@@ -79,7 +79,7 @@ export function Header({ onToggleSidebar }: HeaderProps) {
                 <DropdownMenuItem>Profile</DropdownMenuItem>
                 <DropdownMenuItem>Settings</DropdownMenuItem>
                 <DropdownMenuSeparator />
-                <DropdownMenuItem onClick={()=>{navigate('/login')}}>Log out</DropdownMenuItem>
+                <DropdownMenuItem onClick={()=>{navigate('/AboOmar/login')}}>Log out</DropdownMenuItem>
               </DropdownMenuContent>
             </DropdownMenu>
           </nav>

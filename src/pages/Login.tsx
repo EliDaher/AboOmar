@@ -18,7 +18,7 @@ export default function Login() {
 
     if (res?.message.includes('successful')) {
       localStorage.setItem("DaherUser", JSON.stringify(res.user));
-      navigate("/dashboard");
+      navigate("/AboOmar/dashboard");
 
     } else {
         console.log(res)

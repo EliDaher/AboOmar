@@ -381,7 +381,7 @@ export default function Balance() {
               />
             <StatsCard
             onClick={()=>{
-              navigate('/users', {state: 'unpaid'})
+              navigate('/AboOmar/users', {state: 'unpaid'})
             }}
             title="الديون"
             value={unpaidValue || 0}

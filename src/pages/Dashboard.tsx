@@ -2,24 +2,15 @@ import { useEffect, useMemo, useState } from "react";
 import { useQuery } from "@tanstack/react-query";
 import {
   Users,
-  Activity,
   CreditCard,
 } from "lucide-react";
 
 import { DashboardLayout } from "@/components/layout/DashboardLayout";
 import { StatsCard } from "@/components/dashboard/StatsCard";
 import { ChartContainer } from "@/components/dashboard/ChartContainer";
-import { DataTable } from "@/components/dashboard/DataTable";
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { apiService, User, Post } from "@/services/api";
 import getWifiCustomers from "@/services/wifi";
 import getTodyBalance, { getBalanceByDate } from "@/services/balance";
-import { DemoContainer } from '@mui/x-date-pickers/internals/demo';
-import { AdapterDayjs } from '@mui/x-date-pickers/AdapterDayjs';
-import { LocalizationProvider } from '@mui/x-date-pickers/LocalizationProvider';
-import { DatePicker } from '@mui/x-date-pickers/DatePicker';
-import dayjs from "dayjs";
 import { useNavigate } from "react-router-dom";
 
 export default function Dashboard() {
@@ -168,7 +159,7 @@ export default function Dashboard() {
         <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-4">
           <StatsCard
             onClick={()=>{
-              navigate('/users')
+              navigate('/AboOmar/users')
             }}
             title="عدد مشتركين الفضائي"
             value={customers.length || 0}
@@ -178,7 +169,7 @@ export default function Dashboard() {
           />
           <StatsCard
             onClick={()=>{
-              navigate('/users', {state: 'unpaid'})
+              navigate('/AboOmar/users', {state: 'unpaid'})
             }}
             title="الفواتير الغير مدفوعة"
             value={unpaidValue || 0}

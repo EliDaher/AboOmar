@@ -6,7 +6,7 @@ const Index = () => {
 
   useEffect(() => {
     // Redirect to dashboard as the main app page
-    navigate("/dashboard", { replace: true });
+    navigate("/AboOmar/dashboard", { replace: true });
   }, [navigate]);
 
   return null;

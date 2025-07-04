@@ -22,7 +22,7 @@ const NotFound = () => {
 
           <div className="space-y-3">
             <Button asChild className="w-full">
-              <Link to="/dashboard">
+              <Link to="/AboOmar/dashboard">
                 <Home className="mr-2 h-4 w-4" />
                 Go to Dashboard
               </Link>

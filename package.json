@@ -1,10 +1,13 @@
 {
+  "homepage": "https://elidaher.github.io/AboOmar/",
   "name": "fusion-starter",
   "private": true,
   "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist",
     "test": "vitest --run",
     "format.fix": "prettier --write .",
     "typecheck": "tsc"

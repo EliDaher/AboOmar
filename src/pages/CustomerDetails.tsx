@@ -277,7 +277,7 @@ export default function CustomerDetails() {
       <div className="space-y-6" dir="rtl">
         <div className="flex items-center justify-between">
           <h1 className="text-3xl font-bold">بيانات المشترك</h1>
-          <Button onClick={() => navigate("/users")} variant="outline">
+          <Button onClick={() => navigate("/AboOmar/users")} variant="outline">
             <ArrowLeft className="ml-2 w-4 h-4" /> رجوع
           </Button>
         </div>
